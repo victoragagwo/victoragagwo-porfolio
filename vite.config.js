@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(),
      tailwindcss()
   ],
-  base: "/victoragagwo-porfolio"
+  base: process.env.VITE_BASE_PATH || "/victoragagwo-porfolio"
 })
 
 
