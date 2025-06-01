@@ -1,0 +1,135 @@
+.projects-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;      /* Prevent wrapping */
+   overflow-x: visible;      /* Allow horizontal scroll if needed */
+  padding-bottom: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  min-height: 520px;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  position: relative;
+  border: 2px solid rgb(82, 82, 199); 
+  will-change: transform, box-shadow;
+  z-index: 1;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 40px 0 rgba(37,99,235,0.18), 0 4px 16px 0 rgba(0,0,0,0.08);
+  transform: translateY(-19px) scale(1.025);
+}
+
+.dark .project-card {
+  background: #18181b;
+  box-shadow: 0 6px 32px 0 rgba(37,99,235,0.18), 0 2px 8px 0 rgba(0,0,0,0.13);
+}
+
+.project-poster {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px 0 rgba(37,99,235,0.10);
+  margin-bottom: 2rem;
+  transition: border 0.2s;
+}
+
+.project-info {
+  flex: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.project-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+
+.project-desc {
+  margin-bottom: 1.5rem;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+
+.project-link {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.7rem 2.2rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 1.08rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+  margin-top: 1rem;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+  .projects-row {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-card {
+    width: 90vw;
+    max-width: 400px;
+    min-height: 420px;
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+  .project-poster {
+    width: 170px;
+    height: 240px;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .projects-page {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .projects-row {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .project-card {
+    width: 98vw;
+    max-width: 98vw;
+    min-height: 320px;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .project-poster {
+    width: 110px;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-desc {
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+  }
+  .project-link {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

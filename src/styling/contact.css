@@ -1,0 +1,82 @@
+.contact-page {
+  background: transparent;
+}
+
+.contact-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.contact-subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 2.2rem;
+}
+
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.email {
+  font-size: 1.18rem;
+  font-weight: 600;
+  background: #f3f4f6;
+  padding: 1rem 2.2rem;
+  border-radius: 0.9rem;
+  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.10);
+  color: #1e293b;
+  letter-spacing: 0.5px;
+  border: 1.5px solid #2563eb;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.contact-divider {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2.5rem 0 2rem 0;
+  width: 100%;
+}
+
+.github-link {
+  text-align: center;
+}
+
+.github-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 0.7rem;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.13rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+}
+
+.github-link a:hover,
+.github-link a:focus {
+  background: #1d4ed8;
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(37,99,235,0.18);
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .email {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+  }
+}

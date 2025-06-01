@@ -1,0 +1,122 @@
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.home-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.home-subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.home-description {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.home-content .flex {
+  justify-content: center;
+}
+
+.home-content a {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.home-content a.bg-gray-800 {
+  background: #1f2937;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+}
+
+.home-content a.bg-gray-800:hover,
+.home-content a.bg-gray-800:focus {
+  background: #1e40af;
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
+}
+
+.home-content a[aria-label="GitHub"] {
+  background: none;
+  color: #334155;
+  font-size: 2.1rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.home-content a[aria-label="GitHub"]:hover,
+.home-content a[aria-label="GitHub"]:focus {
+  color: #2563eb;
+  background: rgba(37,99,235,0.08);
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+  .home-content {
+    padding: 2rem 1rem;
+  }
+  .home-title {
+    font-size: 2rem;
+  }
+  .home-description {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .home-section {
+    padding: 0 0.3rem;
+  }
+  .home-content {
+    padding: 1.2rem 0.3rem;
+  }
+  .home-title {
+    font-size: 1.4rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .home-description {
+    font-size: 0.98rem;
+    margin-bottom: 1.2rem;
+  }
+  .home-content .flex {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .home-content a {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .home-content a[aria-label="GitHub"] {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+    width: auto;
+  }
+  .home-content img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+}

@@ -1,0 +1,76 @@
+/* Hamburger styles for mobile/tablet */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+/* Center brand on mobile/tablet */
+@media (max-width: 1023px) {
+  .nav-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    /* Adjust for vertical alignment if needed */
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+  }
+  nav {
+    position: relative;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0 1.5rem 0;
+  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.13);
+  border-radius: 0 0 1.2rem 1.2rem;
+  background: inherit;
+}
+
+/* Hide nav links on tablet and below */
+@media (max-width: 1023px) {
+  .nav-links {
+    display: none !important;
+  }
+  .nav-toggle {
+    margin-left: auto;
+  }
+}
