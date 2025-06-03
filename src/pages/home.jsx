@@ -1,5 +1,5 @@
 import '../styling/home.css';
-import Resume from "../assets/Resume .pdf";
+import Resume from "../assets/Resume.pdf";
 import { FaGithub } from "react-icons/fa";
 import ID from "../assets/id.jpg"
 import Projects from './projects';
