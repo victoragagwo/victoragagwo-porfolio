@@ -1,11 +1,11 @@
 .projects-row {
   display: flex;
+  flex-wrap: wrap;              /* Allow wrapping */
   flex-direction: row;
   gap: 2rem;
   align-items: stretch;
-  justify-content: flex-start;
-  flex-wrap: nowrap;      /* Prevent wrapping */
-   overflow-x: visible;      /* Allow horizontal scroll if needed */
+  justify-content: center;      /* Center the rows */
+  overflow-x: visible;
   padding-bottom: 1rem;
 }
 
@@ -13,7 +13,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 340px;
+  width: 45%;                   /* Two cards per row */
+  min-width: 320px;
+  max-width: 500px;
   min-height: 520px;
   border-radius: 1.25rem;
   padding: 2.5rem 2rem 2rem 2rem;
@@ -133,3 +135,5 @@
     padding: 0.6rem 1.2rem;
   }
 }
+
+

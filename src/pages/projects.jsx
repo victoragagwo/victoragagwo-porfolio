@@ -12,7 +12,7 @@ function Projects({ dark }) {
                 <div className="project-card">
                     <img src={Poster1} alt="Movie App Poster" className="project-poster" />
                     <div className="project-info">
-                        <h2 className={`project-title ${dark ? 'text-white' : 'text-gray-900'}`}>Movie App</h2>
+                        <h2 className={`project-title ${dark ? 'text-white' : 'text-gray-900'}`}>EAV movies</h2>
                         <p className={`project-desc ${dark ? 'text-white' : 'text-gray-700'}`}>
                             A web application to browse and search for movies.
                         </p>
@@ -29,7 +29,7 @@ function Projects({ dark }) {
                 <div className="project-card">
                     <img src={Poster4} alt="Agagwo Store Poster" className="project-poster" />
                     <div className="project-info">
-                        <h2 className={`project-title ${dark ? 'text-white' : 'text-gray-900'}`}>Agagwo Store</h2>
+                        <h2 className={`project-title ${dark ? 'text-white' : 'text-gray-900'}`}>Agagwo's</h2>
                         <p className={`project-desc ${dark ? 'text-white' : 'text-gray-700'}`}>
                             An e-commerce web application for shopping online.
                         </p>
@@ -39,7 +39,7 @@ function Projects({ dark }) {
                             rel="noopener noreferrer"
                             className="project-link"
                         >
-                            View Agagwo Store
+                            View Agagwo's
                         </a>
                     </div>
                 </div>
