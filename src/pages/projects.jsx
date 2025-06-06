@@ -2,6 +2,7 @@ import "../styling/projects.css";
 import Poster1 from "../assets/poster1.jpg";
 import Poster2 from "../assets/poster2.jpg";
 import Poster3 from "../assets/poster3.jpg";
+import Poster4 from "../assets/poster4.jpg";
 
 function Projects({ dark }) {
     return (
@@ -22,6 +23,23 @@ function Projects({ dark }) {
                             className="project-link"
                         >
                             View Movie App
+                        </a>
+                    </div>
+                </div>
+                <div className="project-card">
+                    <img src={Poster4} alt="Agagwo Store Poster" className="project-poster" />
+                    <div className="project-info">
+                        <h2 className={`project-title ${dark ? 'text-white' : 'text-gray-900'}`}>Agagwo Store</h2>
+                        <p className={`project-desc ${dark ? 'text-white' : 'text-gray-700'}`}>
+                            An e-commerce web application for shopping online.
+                        </p>
+                        <a
+                            href="https://victoragagwo.github.io/agagwo-store/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-link"
+                        >
+                            View Agagwo Store
                         </a>
                     </div>
                 </div>
@@ -59,6 +77,7 @@ function Projects({ dark }) {
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     );
