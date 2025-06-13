@@ -4,9 +4,10 @@ function Skills({ dark }) {
     const skills = [
         { name: "HTML", level: "Experienced" },
         { name: "CSS", level: "Experienced" },
-        { name: "JavaScript", level: "Intermediate" },
         { name: "React", level: "Intermediate" },
-        { name: "Python", level: "Basic" },
+        { name: "Use of API", level: "Intermediate" },
+        { name: "JavaScript", level: "Intermediate" },
+        { name: "Python", level: "Intermediate" },
         { name: "Linux", level: "Basic" },
         { name: "SQL", level: "Basic" },
     ];
