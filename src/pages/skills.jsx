@@ -7,7 +7,7 @@ function Skills({ dark }) {
         { name: "React", level: "Intermediate" },
         { name: "Use of API", level: "Intermediate" },
         { name: "JavaScript", level: "Intermediate" },
-        { name: "Python", level: "Intermediate" },
+        { name: "Python", level: "Basic" },
         { name: "Linux", level: "Basic" },
         { name: "SQL", level: "Basic" },
     ];
