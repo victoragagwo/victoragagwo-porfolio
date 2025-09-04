@@ -1,6 +1,6 @@
 import '../styling/home.css';
-import Resume from "../assets/Resume.pdf";
-import { FaGithub } from "react-icons/fa";
+import Resume from "../assets/VICTOR cv.pdf";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ID from "../assets/id.jpg"
 import Projects from './projects';
 import Skills from './skills';
@@ -48,22 +48,35 @@ function Home({ dark }) {
                             Contact Me
                         </a>
                         <a
-                        href="https://github.com/victoragagwo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex items-center px-4 py-2 rounded font-semibold transition-colors text-2xl ${
-                            dark
-                                ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                : 'bg-gray-800 text-white hover:bg-gray-900'
-                        }`}
-                        aria-label="GitHub"
-                    >
-                        <FaGithub />
-                    </a>
+                            href="https://github.com/victoragagwo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center px-4 py-2 rounded font-semibold transition-colors text-2xl ${
+                                dark
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-gray-800 text-white hover:bg-gray-900'
+                            }`}
+                            aria-label="GitHub"
+                        >
+                            <FaGithub />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/victor-agagwo-021565382/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center px-4 py-2 rounded font-semibold transition-colors text-2xl ${
+                                dark
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-gray-800 text-white hover:bg-gray-900'
+                            }`}
+                            aria-label="LinkedIn"
+                        >
+                            <FaLinkedin />
+                        </a>
                     </div>
                 </div>
             </section>
-           <section id="projects" className="projects-section">
+            <section id="projects" className="projects-section">
                 <Projects dark={dark} />
             </section> 
             <section id="skills" className="skills-section">
