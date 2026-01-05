@@ -84,6 +84,13 @@ const Navbar = ({ dark, toggleTheme }) => {
             className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
             onClick={() => setMenuOpen(false)}
           >
+            Personal website
+          </a>
+          <a
+            href="#projects"
+            className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
+            onClick={() => setMenuOpen(false)}
+          >
             Projects
           </a>
           <a
