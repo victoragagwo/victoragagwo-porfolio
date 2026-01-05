@@ -33,6 +33,12 @@ const Navbar = ({ dark, toggleTheme }) => {
           href="#projects"
           className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
         >
+          Personal Website
+        </a>
+        <a
+          href="#projects"
+          className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
+        >
           Projects
         </a>
         <a
