@@ -30,7 +30,7 @@ const Navbar = ({ dark, toggleTheme }) => {
       {/* Desktop links */}
       <div className="flex space-x-24 text-lg nav-links">
         <a
-          href="#projects"
+          href="https://victoragagwo.github.io/personal-website/"
           className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
         >
           Personal Website
@@ -86,7 +86,7 @@ const Navbar = ({ dark, toggleTheme }) => {
       {menuOpen && (
         <div className={`mobile-menu md:hidden ${dark ? 'bg-black' : 'bg-white'}`}>
           <a
-            href="#projects"
+            href="https://victoragagwo.github.io/personal-website/"
             className={`${dark ? 'text-white' : 'text-black'} hover:text-blue-500 transition-colors`}
             onClick={() => setMenuOpen(false)}
           >
